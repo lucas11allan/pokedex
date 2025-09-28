@@ -1,7 +1,7 @@
 import Foundation
 
 protocol PokemonDetailServiceProtocol {
-    func fetchPokemon(id: Int) async throws -> Pokemon
+    func fetchPokemon(id: Int) async throws -> PokemonDetail
 }
 
 class PokemonDetailService: PokemonDetailServiceProtocol {
@@ -11,8 +11,9 @@ class PokemonDetailService: PokemonDetailServiceProtocol {
         self.networkService = networkService
     }
     
-    func fetchPokemon(id: Int) async throws -> Pokemon {
+    func fetchPokemon(id: Int) async throws -> PokemonDetail {
         let request = PokemonDetailRequest(id: id)
-        return try await networkService.request(request)
+        let response: PokemonResponse = try await networkService.request(request)
+        return response.toDomain()
     }
 }

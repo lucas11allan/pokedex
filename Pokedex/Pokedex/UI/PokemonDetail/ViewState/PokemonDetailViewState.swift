@@ -2,10 +2,10 @@ import Foundation
 
 enum PokemonDetailViewState {
     case loading
-    case success(Pokemon)
+    case success(PokemonDetail)
     case error(Error)
     
-    var pokemon: Pokemon? {
+    var pokemon: PokemonDetail? {
         if case .success(let pokemon) = self {
             return pokemon
         }
