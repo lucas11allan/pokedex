@@ -6,8 +6,8 @@ enum PokemonListViewState {
     case error(Error)
     
     var pokemonList: [PokemonListItem]? {
-        if case .success(let pokemonList) = self {
-            return pokemonList
+        if case .success(let list) = self {
+            return list
         }
         return nil
     }

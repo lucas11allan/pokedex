@@ -1,0 +1,16 @@
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/PokemonList/Views/PokemonListView.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Core/Services/NetworkService.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Service/PokemonListService/PokemonListRequest.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Service/PokemonDetailService/PokemonDetailService.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Core/Protocols/NetworkRequest.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/PokemonDetail/Views/PokemonDetailView.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Service/PokemonDetailService/PokemonDetailRequest.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/PokedexTests/PokedexTests.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/Dependency/DependencyContainer.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Core/Protocols/NetworkServiceProtocol.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/PokedexTests/PokemonDetailServiceTests.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/PokedexTests/PokemonListServiceTests.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/PokemonDetail/ViewModels/PokemonDetailViewModel.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/PokemonList/ViewModels/PokemonListViewModel.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Service/PokemonListService/PokemonListService.swift
+/Users/lucasallan/Desktop/pokedex/Pokedex/PokedexTests/ExtensionsTests.swift

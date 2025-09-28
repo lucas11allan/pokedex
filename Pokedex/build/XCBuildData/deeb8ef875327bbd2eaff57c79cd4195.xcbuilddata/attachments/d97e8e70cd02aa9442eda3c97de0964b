@@ -1,0 +1,90 @@
+{
+  "" : {
+    "const-values" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests-master.swiftconstvalues",
+    "dependencies" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests-master.d",
+    "diagnostics" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests-master.dia",
+    "emit-module-dependencies" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests-master-emit-module.dia",
+    "swift-dependencies" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests-master.swiftdeps"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Core/Protocols/NetworkRequest.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkRequest.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkRequest.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkRequest.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Core/Protocols/NetworkServiceProtocol.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkServiceProtocol.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkServiceProtocol.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkServiceProtocol.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Core/Services/NetworkService.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkService.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkService.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/NetworkService.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Service/PokemonDetailService/PokemonDetailRequest.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailRequest.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailRequest.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailRequest.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Service/PokemonDetailService/PokemonDetailService.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailService.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailService.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailService.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Service/PokemonListService/PokemonListRequest.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListRequest.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListRequest.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListRequest.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/Service/PokemonListService/PokemonListService.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListService.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListService.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListService.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/Dependency/DependencyContainer.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/DependencyContainer.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/DependencyContainer.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/DependencyContainer.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/PokemonDetail/ViewModels/PokemonDetailViewModel.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailViewModel.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailViewModel.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailViewModel.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/PokemonDetail/Views/PokemonDetailView.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailView.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailView.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailView.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/PokemonList/ViewModels/PokemonListViewModel.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListViewModel.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListViewModel.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListViewModel.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/Pokedex/UI/PokemonList/Views/PokemonListView.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListView.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListView.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListView.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/PokedexTests/ExtensionsTests.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/ExtensionsTests.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/ExtensionsTests.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/ExtensionsTests.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/PokedexTests/PokedexTests.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokedexTests.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/PokedexTests/PokemonDetailServiceTests.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailServiceTests.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailServiceTests.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonDetailServiceTests.o"
+  },
+  "/Users/lucasallan/Desktop/pokedex/Pokedex/PokedexTests/PokemonListServiceTests.swift" : {
+    "index-unit-output-path" : "/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListServiceTests.o",
+    "llvm-bc" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListServiceTests.bc",
+    "object" : "/Users/lucasallan/Desktop/pokedex/Pokedex/build/Pokedex.build/Release-iphonesimulator/PokedexTests.build/Objects-normal/arm64/PokemonListServiceTests.o"
+  }
+}

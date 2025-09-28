@@ -21,7 +21,7 @@ class PokemonDetailViewModel: ObservableObject {
             do {
                 let pokemon = try await pokemonDetailService.fetchPokemon(id: pokemonId)
                 print("✅ [POKEMON_DETAIL] Successfully loaded pokemon: \(pokemon.name)")
-                viewState = .success(pokemon)
+                viewState = .success(pokemon.toDomain())
             } catch {
                 print("❌ [POKEMON_DETAIL] Error loading pokemon: \(error.localizedDescription)")
                 viewState = .error(error)

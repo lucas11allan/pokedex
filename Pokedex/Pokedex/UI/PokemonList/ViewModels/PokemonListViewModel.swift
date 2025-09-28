@@ -22,7 +22,7 @@ class PokemonListViewModel: ObservableObject {
         Task {
             do {
                 let response = try await pokemonListService.fetchPokemonList(offset: currentOffset, limit: limit)
-                pokemonList = response.results
+                pokemonList = response.results.map { $0.toDomain() }
                 print("✅ [POKEMON_LIST] Successfully loaded \(pokemonList.count) pokemon")
                 viewState = .success(pokemonList)
             } catch {
@@ -39,7 +39,7 @@ class PokemonListViewModel: ObservableObject {
         Task {
             do {
                 let response = try await pokemonListService.fetchPokemonList(offset: currentOffset, limit: limit)
-                pokemonList.append(contentsOf: response.results)
+                pokemonList.append(contentsOf: response.results.map { $0.toDomain() })
                 print("✅ [POKEMON_LIST] Successfully loaded \(response.results.count) more pokemon. Total: \(pokemonList.count)")
                 viewState = .success(pokemonList)
             } catch {
