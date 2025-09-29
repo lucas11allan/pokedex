@@ -41,6 +41,7 @@
 		9B0B3C3B2E89C4A3008754E9 /* PokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3C332E89C4A3008754E9 /* PokemonResponse.swift */; };
 		9B0B3C452E89C773008754E9 /* PokemonServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3C412E89C773008754E9 /* PokemonServiceTests.swift */; };
 		9B0B3C492E89C789008754E9 /* PokemonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B3C462E89C789008754E9 /* PokemonUITests.swift */; };
+		9B6A7D9B2E8AAF96007ED990 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6A7D9A2E8AAF96007ED990 /* MockNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		9B0B3C332E89C4A3008754E9 /* PokemonResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonResponse.swift; sourceTree = "<group>"; };
 		9B0B3C412E89C773008754E9 /* PokemonServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonServiceTests.swift; sourceTree = "<group>"; };
 		9B0B3C462E89C789008754E9 /* PokemonUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonUITests.swift; sourceTree = "<group>"; };
+		9B6A7D9A2E8AAF96007ED990 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			children = (
 				9B0B3C412E89C773008754E9 /* PokemonServiceTests.swift */,
 				9B0B3B862E898964008754E9 /* PokedexTests.swift */,
+				9B6A7D9A2E8AAF96007ED990 /* MockNetworkService.swift */,
 			);
 			path = PokedexTests;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6A7D9B2E8AAF96007ED990 /* MockNetworkService.swift in Sources */,
 				9B0B3C452E89C773008754E9 /* PokemonServiceTests.swift in Sources */,
 				9B0B3B872E898964008754E9 /* PokedexTests.swift in Sources */,
 			);
