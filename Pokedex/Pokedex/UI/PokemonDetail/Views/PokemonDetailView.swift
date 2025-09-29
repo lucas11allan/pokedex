@@ -67,7 +67,22 @@ struct PokemonDetailView: View {
                         .padding(.horizontal)
                     }
                 case .error(let error):
-                    Text("Error: \(error.localizedDescription)")
+                    VStack(spacing: 16) {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.system(size: 50))
+                            .foregroundColor(.orange)
+                        
+                        Text("Error: \(error.localizedDescription)")
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                        
+                        Button("Retry") {
+                            viewModel.retryLoadPokemon()
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .accessibilityIdentifier("RetryButton")
+                    }
+                    .padding()
                 }
             }
         }

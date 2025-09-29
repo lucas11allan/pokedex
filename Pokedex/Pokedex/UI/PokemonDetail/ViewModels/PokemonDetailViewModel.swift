@@ -25,4 +25,8 @@ class PokemonDetailViewModel: ObservableObject {
             }
         }
     }
+    
+    func retryLoadPokemon() {
+        loadPokemon()
+    }
 }

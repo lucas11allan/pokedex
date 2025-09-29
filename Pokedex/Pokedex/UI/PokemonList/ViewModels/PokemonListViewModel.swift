@@ -48,4 +48,8 @@ class PokemonListViewModel: ObservableObject {
         pokemonList.removeAll()
         loadPokemonList()
     }
+    
+    func retryLoadPokemonList() {
+        loadPokemonList()
+    }
 }

@@ -1,188 +1,212 @@
 # Pokedex iOS App
 
-A modern iOS application built with SwiftUI, using Cursor with ai generative, that displays a list of Pokémon and their detailed information using the PokéAPI.
+A modern iOS application built with SwiftUI that displays a comprehensive list of Pokémon and their detailed information using the PokéAPI. This project was developed using AI generative tools, more specifically, the Cursor app.
 
-## 🚀 Features
+## 🚀 Instructions to Run the Application
 
-- **Pokémon List**: Browse through a paginated list of Pokémon
-- **Pokémon Details**: View detailed information including types, stats, and images
-- **Splash Screen**: Animated splash screen with Pokéball
-- **Modern UI**: Built with SwiftUI and follows iOS design guidelines
-- **MVVM Architecture**: Clean separation of concerns with ViewModels and Services
-- **Network Layer**: Protocol-based networking with Alamofire
-- **Image Loading**: Efficient image loading with Kingfisher
-- **Comprehensive Testing**: Unit tests and UI tests with mocks
+### Prerequisites
+- **Xcode 15.4+** (Latest version recommended)
+- **iOS 17.5+** deployment target
+- **macOS** with Xcode installed
+- **Internet connection** (required for API calls)
 
-## 🏗️ Architecture
+### Setup and Installation
 
-The app follows **MVVM (Model-View-ViewModel)** architecture with the following structure:
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd pokedex
+   ```
 
-```
-Pokedex/
-├── Core/
-│   ├── Protocols/          # Network protocols
-│   └── Services/           # Network service implementation
-├── Domain/
-│   ├── PokemonList/        # Pokemon list domain models
-│   └── PokemonDetail/      # Pokemon detail domain models
-├── Service/
-│   ├── PokemonListService/ # Pokemon list API service
-│   ├── PokemonDetailService/ # Pokemon detail API service
-│   └── Extensions/         # Response to Domain conversions
-└── UI/
-    ├── PokemonList/        # Pokemon list views and ViewModels
-    ├── PokemonDetail/      # Pokemon detail views and ViewModels
-    └── SplashScreen/       # Splash screen view
-```
+2. **Open the project**
+   ```bash
+   open Pokedex/Pokedex.xcodeproj
+   ```
 
-## 📋 Requirements
-
-- **Xcode**: 15.0 or later
-- **iOS**: 17.5 or later
-- **Swift**: 5.9 or later
-- **macOS**: 14.0 or later (for development)
-
-## 🛠️ Dependencies
-
-The project uses Swift Package Manager for dependency management:
-
-- **Alamofire**: 5.10.2 - HTTP networking
-- **Kingfisher**: 8.5.0 - Image loading and caching
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone <repository-url>
-cd pokedex
-```
-
-### 2. Open the Project
-
-```bash
-open Pokedex/Pokedex.xcodeproj
-```
-
-### 3. Build the Project
-
-#### Using Xcode:
-1. Open `Pokedex.xcodeproj` in Xcode
-2. Select your target device or simulator
-3. Press `Cmd + B` to build the project
-
-#### Using Command Line:
-```bash
-cd Pokedex
-xcodebuild -scheme Pokedex -destination 'platform=iOS Simulator,name=iPhone 15' build
-```
-
-### 4. Run the App
-
-#### Using Xcode:
-1. Select your target device or simulator
-2. Press `Cmd + R` to run the app
-
-#### Using Command Line:
-```bash
-cd Pokedex
-xcodebuild -scheme Pokedex -destination 'platform=iOS Simulator,name=iPhone 15' test
-```
-
-## 🧪 Testing
-
-The project includes comprehensive testing with both unit tests and UI tests.
-
-### Test Structure
-
-- **Unit Tests**: `PokedexTests` target
-  - Service tests with mocks
-  - Data transformation tests
-  - Basic functionality tests
-
-- **UI Tests**: `PokedexUITests` target
-  - App launch tests
-  - Splash screen tests
-  - Navigation flow tests
-  - Performance tests
+3. **Build and run**
+   - Select your target device or simulator
+   - Press `Cmd + R` or click the "Run" button in Xcode
+   - The app will build and launch automatically
 
 ### Running Tests
 
-#### Run All Tests:
-```bash
-cd Pokedex
-xcodebuild test -scheme Pokedex -destination 'platform=iOS Simulator,name=iPhone 15'
+1. **Unit Tests**
+   ```bash
+   # In Xcode: Cmd + U
+   # Or via command line:
+   xcodebuild test -scheme Pokedex -destination 'platform=iOS Simulator,name=iPhone 15'
+   ```
+
+2. **UI Tests**
+   - Select the `PokedexUITests` scheme
+   - Press `Cmd + U` to run UI tests
+
+## 🏗️ Architectural Overview and Decisions
+
+### Architecture Pattern: MVVM + Clean Architecture
+
+The application follows a **Clean Architecture** approach with **MVVM (Model-View-ViewModel)** pattern, ensuring separation of concerns and testability.
+
+#### Layer Structure:
+
+```
+┌─────────────────────────────────────────┐
+│                UI Layer                 │
+│  ┌─────────────┐  ┌─────────────────┐   │
+│  │    Views    │  │   ViewModels    │   │
+│  │             │  │                 │   │
+│  └─────────────┘  └─────────────────┘   │
+└─────────────────────────────────────────┘
+┌─────────────────────────────────────────┐
+│             Domain Layer                │
+│  ┌─────────────┐  ┌─────────────────┐   │
+│  │   Models    │  │   Protocols     │   │
+│  │             │  │                 │   │
+│  └─────────────┘  └─────────────────┘   │
+└─────────────────────────────────────────┘
+┌─────────────────────────────────────────┐
+│            Service Layer                │
+│  ┌─────────────┐  ┌─────────────────┐   │
+│  │  Services   │  │   Extensions    │   │
+│  │             │  │                 │   │
+│  └─────────────┘  └─────────────────┘   │
+└─────────────────────────────────────────┘
+┌─────────────────────────────────────────┐
+│             Core Layer                  │
+│  ┌─────────────┐  ┌─────────────────┐   │
+│  │  Network    │  │   Protocols     │   │
+│  │  Service    │  │                 │   │
+│  └─────────────┘  └─────────────────┘   │
+└─────────────────────────────────────────┘
 ```
 
-### Test Features
+### Key Architectural Decisions:
 
-- **Mock Services**: All tests use mock services to avoid real network requests
-- **Independent Tests**: Each test is self-contained and doesn't depend on external state
-- **Fast Execution**: Tests run quickly without network dependencies
-- **Comprehensive Coverage**: Tests cover services, data transformation, and UI interactions
+#### 1. **Dependency Injection Container**
+- **Decision**: Custom `DependencyContainer` singleton
+- **Rationale**: Centralized dependency management, easy testing with mock injection
+- **Benefits**: Loose coupling, testability, single source of truth for dependencies
 
-## 🔧 Build Configuration
+#### 2. **Protocol-Oriented Programming**
+- **Decision**: Extensive use of protocols for all service layers
+- **Rationale**: Enables easy mocking, testing, and future implementations
+- **Example**: `NetworkServiceProtocol`, `PokemonListServiceProtocol`
 
-### Debug Build
-```bash
-xcodebuild -scheme Pokedex -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 15' build
-```
+#### 3. **ViewState Pattern**
+- **Decision**: Enum-based view states for UI state management
+- **Rationale**: Type-safe state handling, clear UI state transitions
+- **Benefits**: Prevents invalid UI states, easier debugging
 
-### Release Build
-```bash
-xcodebuild -scheme Pokedex -configuration Release -destination 'platform=iOS Simulator,name=iPhone 15' build
-```
+### Data Flow:
 
-### Clean Build
-```bash
-xcodebuild clean -scheme Pokedex
-```
+1. **View** triggers action in **ViewModel**
+2. **ViewModel** calls **Service** through protocol
+3. **Service** uses **NetworkService** to fetch data
+4. **Response** is transformed to **Domain Models**
+5. **ViewModel** updates **ViewState**
+6. **View** reacts to state changes
 
-## 📱 Supported Devices
+## 📚 Libraries and Tools Used
 
-- **iPhone**: All iPhone models running iOS 17.5+
-- **iPad**: All iPad models running iOS 17.5+
-- **Simulator**: All iOS Simulator devices
+### Core Dependencies
 
-## 🐛 Troubleshooting
+#### 1. **Alamofire 5.10.2**
+- **Purpose**: HTTP networking library
+- **Why**: 
+  - Industry standard for iOS networking
+  - Excellent error handling and request/response management
+  - Built-in support for async/await
+  - Comprehensive testing capabilities
+- **Usage**: Powering all API calls to PokéAPI
 
-### Common Issues
+#### 2. **Kingfisher 8.5.0**
+- **Purpose**: Image downloading and caching library
+- **Why**:
+  - Automatic image caching and memory management
+  - Smooth image loading with placeholder support
+  - Built-in circular image processing
+  - Excellent performance for large image sets
+- **Usage**: Loading and caching Pokémon sprites
 
-1. **Build Errors**: Clean the build folder (`Cmd + Shift + K` in Xcode)
-2. **Simulator Issues**: Reset simulator or create a new one
-3. **Dependency Issues**: Update Swift Package Manager dependencies
-4. **Test Failures**: Ensure all dependencies are properly installed
+### Development Tools
 
-### Clean Build
-```bash
-cd Pokedex
-xcodebuild clean -scheme Pokedex
-rm -rf ~/Library/Developer/Xcode/DerivedData/Pokedex-*
-```
+#### 1. **SwiftUI**
+- **Purpose**: Declarative UI framework
+- **Why**: 
+  - Modern, declarative approach
+  - Built-in state management with `@Published` and `@StateObject`
+  - Excellent preview capabilities
+  - Native iOS integration
 
-## 📊 Performance
+#### 2. **Combine Framework**
+- **Purpose**: Reactive programming
+- **Why**:
+  - Native Swift reactive programming
+  - Perfect integration with SwiftUI
+  - Type-safe publishers and subscribers
+  - Built-in error handling
 
-- **App Launch Time**: Optimized with splash screen
-- **Image Loading**: Efficient caching with Kingfisher
-- **Memory Usage**: Optimized for smooth scrolling
-- **Network**: Efficient API calls with pagination
+#### 3. **XCTest Framework**
+- **Purpose**: Unit and UI testing
+- **Why**:
+  - Native iOS testing framework
+  - Excellent integration with Xcode
+  - Support for both unit and UI testing
+  - Mock and stub capabilities
 
-## 🤝 Contributing
+### API Integration
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Ensure all tests pass
-6. Submit a pull request
+#### **PokéAPI (https://pokeapi.co/)**
+- **Purpose**: Pokémon data source
+- **Why**:
+  - Comprehensive Pokémon database
+  - Free and reliable
+  - RESTful API design
+  - Rich data including sprites, stats, and details
 
-## 📄 License
+## 🔧 What I Would Improve with More Time
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+### 1. **Improve Navigation System**
+- **Current**: Basic native SwiftUI navigation
+- **Improvement**:
+  - Create a more robust navigation system
+  - Use UIHostingController to navigate with UIKit tools
+  - Implement a Coordinator pattern to centralize navigation, making it more organized, testable, and easier to understand
 
-## 🙏 Acknowledgments
+### 2. **Enhanced UI/UX Features**
+- **Current**: Basic list and detail views
+- **Improvement**:
+  - Search and filtering capabilities
+  - Favorites system with persistence
+  - Dark mode support
+  - Accessibility improvements (VoiceOver, Dynamic Type)
+  - Custom animations and transitions
 
-- **PokéAPI**: For providing the Pokémon data
-- **Alamofire**: For HTTP networking
-- **Kingfisher**: For image loading and caching
-- **SwiftUI**: For the modern UI framework
+### 3. **Monitoring & Analytics**
+- **Current**: No monitoring
+- **Improvement**:
+  - Performance monitoring
+  - User behavior analytics
+  - API response time tracking
+  - Error rate monitoring
+  - Custom metrics dashboard
+
+## 📱 App Features
+
+- **Pokémon List**: Browse all Pokémon with pagination
+- **Pokémon Details**: View detailed information for each Pokémon
+- **Image Loading**: Smooth image loading with caching
+- **Pull-to-Refresh**: Refresh the Pokémon list
+- **Infinite Scroll**: Automatic loading of more Pokémon
+- **Splash Screen**: Animated loading screen
+- **Error Handling**: Graceful error states
+
+## 🧪 Testing
+
+The project includes comprehensive testing:
+
+- **Unit Tests**: Network service, dependency container, view states
+- **UI Tests**: Complete user flow testing
+- **Mock Services**: Isolated testing with mock implementations
+
+---

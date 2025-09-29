@@ -34,7 +34,22 @@ struct PokemonListView: View {
                         viewModel.refreshPokemonList()
                     }
                 case .error(let error):
-                    Text("Error: \(error.localizedDescription)")
+                    VStack(spacing: 16) {
+                        Image(systemName: "exclamationmark.triangle")
+                            .font(.system(size: 50))
+                            .foregroundColor(.orange)
+                        
+                        Text("Error: \(error.localizedDescription)")
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                        
+                        Button("Retry") {
+                            viewModel.retryLoadPokemonList()
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .accessibilityIdentifier("RetryButton")
+                    }
+                    .padding()
                 }
             }
             .accessibilityIdentifier("PokemonListView")
