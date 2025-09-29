@@ -10,6 +10,7 @@ struct PokemonListView: View {
                 switch viewModel.viewState {
                 case .loading:
                     ProgressView("Loading Pokemons...")
+                        .accessibilityIdentifier("LoadingIndicator")
                 case .success(let pokemons):
                     List(pokemons) { pokemon in
                         NavigationLink(destination: PokemonDetailView(pokemonId: pokemon.id)) {
@@ -36,6 +37,7 @@ struct PokemonListView: View {
                     Text("Error: \(error.localizedDescription)")
                 }
             }
+            .accessibilityIdentifier("PokemonListView")
             .onAppear {
                 viewModel.loadPokemonList()
             }

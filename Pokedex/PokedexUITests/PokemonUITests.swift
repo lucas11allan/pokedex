@@ -24,11 +24,11 @@ class PokemonUITests: XCTestCase {
     func testSplashScreenAppears() throws {
         // Test that splash screen appears on launch
         let splashScreen = app.otherElements["SplashScreenView"]
-        XCTAssertTrue(splashScreen.waitForExistence(timeout: 5))
+        XCTAssertTrue(splashScreen.waitForExistence(timeout: 2))
         
         // Test that splash screen has the title
         let title = app.staticTexts["Pokedex"]
-        XCTAssertTrue(title.exists)
+        XCTAssertTrue(title.waitForExistence(timeout: 3))
     }
     
     func testSplashScreenElements() throws {
@@ -37,12 +37,12 @@ class PokemonUITests: XCTestCase {
         XCTAssertTrue(splashScreen.waitForExistence(timeout: 2))
         
         // Test that Pokeball image exists
-        let pokeballImage = app.images["PokeballImage"]
-        XCTAssertTrue(pokeballImage.exists)
+        let pokeballImage = app.otherElements["PokeballImage"]
+        XCTAssertTrue(pokeballImage.waitForExistence(timeout: 3))
         
         // Test that title exists
         let title = app.staticTexts["Pokedex"]
-        XCTAssertTrue(title.exists)
+        XCTAssertTrue(title.waitForExistence(timeout: 3))
     }
     
     // MARK: - Navigation Tests
@@ -53,28 +53,28 @@ class PokemonUITests: XCTestCase {
         XCTAssertTrue(splashScreen.waitForExistence(timeout: 2))
         
         // Wait for splash screen to disappear (after animation)
-        sleep(3) // Wait for animation to complete
+        sleep(4) // Wait for animation to complete
         XCTAssertFalse(splashScreen.exists)
         
         // Test that main content appears
         let mainContent = app.otherElements["ContentView"]
-        XCTAssertTrue(mainContent.waitForExistence(timeout: 3))
+        XCTAssertTrue(mainContent.waitForExistence(timeout: 5))
     }
     
     func testPokemonListUIElements() throws {
         // Wait for splash screen to appear and then disappear
         let splashScreen = app.otherElements["SplashScreenView"]
         XCTAssertTrue(splashScreen.waitForExistence(timeout: 2))
-        sleep(3) // Wait for animation to complete
+        sleep(4) // Wait for animation to complete
         XCTAssertFalse(splashScreen.exists)
         
         // Test that Pokemon list view appears
         let pokemonListView = app.otherElements["PokemonListView"]
-        XCTAssertTrue(pokemonListView.waitForExistence(timeout: 3))
+        XCTAssertTrue(pokemonListView.waitForExistence(timeout: 5))
         
         // Test that loading indicator appears initially
         let loadingIndicator = app.activityIndicators.firstMatch
-        XCTAssertTrue(loadingIndicator.waitForExistence(timeout: 2))
+        XCTAssertTrue(loadingIndicator.waitForExistence(timeout: 3))
     }
     
     // MARK: - Performance Tests

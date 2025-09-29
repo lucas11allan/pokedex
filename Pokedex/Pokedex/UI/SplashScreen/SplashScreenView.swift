@@ -7,6 +7,7 @@ struct SplashScreenView: View {
     var body: some View {
         if showMainApp {
             ContentView()
+                .accessibilityIdentifier("ContentView")
         } else {
             ZStack {
                 // Background gradient
@@ -39,10 +40,12 @@ struct SplashScreenView: View {
                                 .delay(0.5),
                             value: isAnimating
                         )
+                        .accessibilityIdentifier("Pokedex")
                     
                     // Loading indicator
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                        .accessibilityIdentifier("LoadingIndicator")
                         .scaleEffect(1.2)
                         .opacity(isAnimating ? 1.0 : 0.0)
                         .animation(
@@ -52,6 +55,7 @@ struct SplashScreenView: View {
                         )
                 }
             }
+            .accessibilityIdentifier("SplashScreenView")
             .onAppear {
                 isAnimating = true
                 
@@ -105,6 +109,7 @@ struct PokeballView: View {
                         .frame(width: 20, height: 20)
                 )
         }
+        .accessibilityIdentifier("PokeballImage")
     }
 }
 
